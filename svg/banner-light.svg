@@ -1,0 +1,151 @@
+<svg viewBox="0 0 800 390" xmlns="http://www.w3.org/2000/svg" width="800" height="390" font-family="'JetBrains Mono', 'Courier New', monospace">
+  <defs>
+    <style>
+      .typing-text { animation: typing 16s steps(55) infinite; }
+      @keyframes typing {
+        0%,92%,100% { clip-path: inset(0 100% 0 0); }
+        18%,80%     { clip-path: inset(0 0% 0 0); }
+      }
+      .cursor { animation: cursor-anim 16s step-end infinite; }
+      @keyframes cursor-anim {
+        0%     { opacity: 0; }
+        18%    { opacity: 1; }
+        19%    { opacity: 0; }
+        20%    { opacity: 1; }
+        21%    { opacity: 0; }
+        22%    { opacity: 1; }
+        23%    { opacity: 0; }
+        24%    { opacity: 1; }
+        25%    { opacity: 0; }
+        26%    { opacity: 1; }
+        27%    { opacity: 0; }
+        28%    { opacity: 1; }
+        29%    { opacity: 0; }
+        30%    { opacity: 1; }
+        31%    { opacity: 0; }
+        32%    { opacity: 1; }
+        33%    { opacity: 0; }
+        34%    { opacity: 1; }
+        35%    { opacity: 0; }
+        36%    { opacity: 1; }
+        37%    { opacity: 0; }
+        38%    { opacity: 1; }
+        39%    { opacity: 0; }
+        40%    { opacity: 1; }
+        41%    { opacity: 0; }
+        42%    { opacity: 1; }
+        43%    { opacity: 0; }
+        44%    { opacity: 1; }
+        45%    { opacity: 0; }
+        46%    { opacity: 1; }
+        47%    { opacity: 0; }
+        48%    { opacity: 1; }
+        49%    { opacity: 0; }
+        50%    { opacity: 1; }
+        51%    { opacity: 0; }
+        52%    { opacity: 1; }
+        53%    { opacity: 0; }
+        54%    { opacity: 1; }
+        55%    { opacity: 0; }
+        56%    { opacity: 1; }
+        57%    { opacity: 0; }
+        58%    { opacity: 1; }
+        59%    { opacity: 0; }
+        60%    { opacity: 1; }
+        61%    { opacity: 0; }
+        62%    { opacity: 1; }
+        63%    { opacity: 0; }
+        64%    { opacity: 1; }
+        65%    { opacity: 0; }
+        66%    { opacity: 1; }
+        67%    { opacity: 0; }
+        68%    { opacity: 1; }
+        69%    { opacity: 0; }
+        70%    { opacity: 1; }
+        71%    { opacity: 0; }
+        72%    { opacity: 1; }
+        73%    { opacity: 0; }
+        74%    { opacity: 1; }
+        75%    { opacity: 0; }
+        76%    { opacity: 1; }
+        77%    { opacity: 0; }
+        78%    { opacity: 1; }
+        79%    { opacity: 0; }
+        80%,100% { opacity: 0; }
+      }
+    </style>
+  </defs>
+
+  <rect width="800" height="390" rx="12" fill="#f6f8fa"/>
+  <rect width="800" height="390" rx="12" fill="none" stroke="#d0d7de" stroke-width="1"/>
+
+  <!-- Window dots -->
+  <circle cx="28" cy="26" r="6" fill="#ff5f57"/>
+  <circle cx="48" cy="26" r="6" fill="#ffbd2e"/>
+  <circle cx="68" cy="26" r="6" fill="#28ca41"/>
+
+  <!-- Role only -->
+  <text x="28" y="58" font-size="12" fill="#57606a">Pizza-powered QA Engineer @ Dodo Brands</text>
+
+  <!-- Typing -->
+  <text x="28" y="82" font-size="10" fill="#1a7f37">$ cat about.md</text>
+  <rect x="28" y="90" width="744" height="36" rx="5" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+  <g transform="translate(42, 113)">
+    <text class="typing-text" font-size="11" fill="#24292f">&#x1F50D; Building bulletproof test automation since 2020...</text>
+    <text class="cursor" font-size="11" fill="#1a7f37" x="352" y="0">&#x2588;</text>
+  </g>
+  <text x="28" y="142" font-size="10" fill="#57606a">I break things professionally so users don't have to</text>
+
+  <line x1="28" y1="158" x2="772" y2="158" stroke="#d0d7de" stroke-width="1"/>
+
+  <text x="28" y="178" font-size="10" fill="#1a7f37">$ echo $STACK</text>
+
+  <!-- ROW 1: Languages -->
+  <text x="28" y="202" font-size="9" fill="#57606a">languages</text>
+  <rect x="170" y="188" width="38" height="18" rx="3" fill="#ddf4ff"/>
+  <text x="189" y="200" font-size="9" font-weight="700" fill="#0550ae" text-anchor="middle">Java</text>
+  <rect x="214" y="188" width="68" height="18" rx="3" fill="#dafbe1"/>
+  <text x="248" y="200" font-size="9" font-weight="700" fill="#116329" text-anchor="middle">TypeScript</text>
+
+  <!-- ROW 2: Learning -->
+  <text x="28" y="224" font-size="9" fill="#57606a">currently learning</text>
+  <rect x="170" y="210" width="28" height="18" rx="3" fill="#fbefff"/>
+  <text x="184" y="222" font-size="9" font-weight="700" fill="#8250df" text-anchor="middle">C#</text>
+  <rect x="204" y="210" width="42" height="18" rx="3" fill="#fbefff"/>
+  <text x="225" y="222" font-size="9" font-weight="700" fill="#8250df" text-anchor="middle">NUnit</text>
+
+  <!-- ROW 3: Testing -->
+  <text x="28" y="246" font-size="9" fill="#57606a">test automation</text>
+  <rect x="170" y="232" width="62" height="18" rx="3" fill="#dafbe1"/>
+  <text x="201" y="244" font-size="9" font-weight="700" fill="#116329" text-anchor="middle">Playwright</text>
+  <rect x="238" y="232" width="78" height="18" rx="3" fill="#ddf4ff"/>
+  <text x="277" y="244" font-size="9" font-weight="700" fill="#0550ae" text-anchor="middle">Rest-Assured</text>
+  <rect x="322" y="232" width="40" height="18" rx="3" fill="#ddf4ff"/>
+  <text x="342" y="244" font-size="9" font-weight="700" fill="#0550ae" text-anchor="middle">JUnit</text>
+
+  <!-- ROW 4: CI/CD -->
+  <text x="28" y="268" font-size="9" fill="#57606a">ci/cd</text>
+  <rect x="170" y="254" width="52" height="18" rx="3" fill="#fff8c5"/>
+  <text x="196" y="266" font-size="9" font-weight="700" fill="#7d4e00" text-anchor="middle">Jenkins</text>
+  <rect x="228" y="254" width="100" height="18" rx="3" fill="#fff8c5"/>
+  <text x="278" y="266" font-size="9" font-weight="700" fill="#7d4e00" text-anchor="middle">GitHub Actions</text>
+
+  <!-- ROW 5: Infrastructure -->
+  <text x="28" y="290" font-size="9" fill="#57606a">infrastructure</text>
+  <rect x="170" y="276" width="46" height="18" rx="3" fill="#d0f7f5"/>
+  <text x="193" y="288" font-size="9" font-weight="700" fill="#0e7a74" text-anchor="middle">Docker</text>
+  <rect x="222" y="276" width="72" height="18" rx="3" fill="#d0f7f5"/>
+  <text x="258" y="288" font-size="9" font-weight="700" fill="#0e7a74" text-anchor="middle">Kubernetes</text>
+
+  <!-- ROW 6: Monitoring -->
+  <text x="28" y="312" font-size="9" fill="#57606a">monitoring &amp; observability</text>
+  <rect x="170" y="298" width="52" height="18" rx="3" fill="#fff0eb"/>
+  <text x="196" y="310" font-size="9" font-weight="700" fill="#bc4c00" text-anchor="middle">Grafana</text>
+  <rect x="228" y="298" width="46" height="18" rx="3" fill="#fff0eb"/>
+  <text x="251" y="310" font-size="9" font-weight="700" fill="#bc4c00" text-anchor="middle">Kibana</text>
+
+  <line x1="28" y1="330" x2="772" y2="330" stroke="#d0d7de" stroke-width="1"/>
+
+  <text x="28" y="352" font-size="10" fill="#1a7f37">$ echo $LINK</text>
+  <text x="120" y="352" font-size="10" fill="#57606a">linkedin.com/in/vadimsolonin</text>
+</svg>
