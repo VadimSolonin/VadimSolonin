@@ -1,131 +1,142 @@
-<svg viewBox="0 0 800 368" xmlns="http://www.w3.org/2000/svg" width="800" height="368" font-family="'JetBrains Mono', 'Courier New', monospace">
+<svg viewBox="0 0 720 445" xmlns="http://www.w3.org/2000/svg" width="720" height="445" font-family="'JetBrains Mono', 'Courier New', monospace">
   <defs>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&amp;display=swap');
-      .typing-text { animation: typing 16s steps(90) infinite; }
-      @keyframes typing {
-        0%,92%,100% { clip-path: inset(0 100% 0 0); }
-        18%,80%     { clip-path: inset(0 0% 0 0); }
+
+      /* LINE 1: types 0→15%, holds 15→75%, erases 75→90% */
+      .typing1 { animation: typing1 20s steps(48) infinite; }
+      @keyframes typing1 {
+        0%          { clip-path: inset(0 100% 0 0); }
+        15%         { clip-path: inset(0 0% 0 0); }
+        75%         { clip-path: inset(0 0% 0 0); }
+        90%,100%    { clip-path: inset(0 100% 0 0); }
       }
-      .cursor { animation: cursor-anim 16s step-end infinite; }
-      @keyframes cursor-anim {
-        0%     { opacity: 0; }
-        18%    { opacity: 1; }
-        19%    { opacity: 0; }
-        20%    { opacity: 1; }
-        21%    { opacity: 0; }
-        22%    { opacity: 1; }
-        23%    { opacity: 0; }
-        24%    { opacity: 1; }
-        25%    { opacity: 0; }
-        26%    { opacity: 1; }
-        27%    { opacity: 0; }
-        28%    { opacity: 1; }
-        29%    { opacity: 0; }
-        30%    { opacity: 1; }
-        31%    { opacity: 0; }
-        32%    { opacity: 1; }
-        33%    { opacity: 0; }
-        34%    { opacity: 1; }
-        35%    { opacity: 0; }
-        36%    { opacity: 1; }
-        37%    { opacity: 0; }
-        38%    { opacity: 1; }
-        39%    { opacity: 0; }
-        40%    { opacity: 1; }
-        41%    { opacity: 0; }
-        42%    { opacity: 1; }
-        43%    { opacity: 0; }
-        44%    { opacity: 1; }
-        45%    { opacity: 0; }
-        46%    { opacity: 1; }
-        47%    { opacity: 0; }
-        48%    { opacity: 1; }
-        49%    { opacity: 0; }
-        50%    { opacity: 1; }
-        51%    { opacity: 0; }
-        52%    { opacity: 1; }
-        53%    { opacity: 0; }
-        54%    { opacity: 1; }
-        55%    { opacity: 0; }
-        56%    { opacity: 1; }
-        57%    { opacity: 0; }
-        58%    { opacity: 1; }
-        59%    { opacity: 0; }
-        60%    { opacity: 1; }
-        61%    { opacity: 0; }
-        62%    { opacity: 1; }
-        63%    { opacity: 0; }
-        64%    { opacity: 1; }
-        65%    { opacity: 0; }
-        66%    { opacity: 1; }
-        67%    { opacity: 0; }
-        68%    { opacity: 1; }
-        69%    { opacity: 0; }
-        70%    { opacity: 1; }
-        71%    { opacity: 0; }
-        72%    { opacity: 1; }
-        73%    { opacity: 0; }
-        74%    { opacity: 1; }
-        75%    { opacity: 0; }
-        76%    { opacity: 1; }
-        77%    { opacity: 0; }
-        78%    { opacity: 1; }
-        79%    { opacity: 0; }
-        80%,100% { opacity: 0; }
+
+      /* LINE 2: types 25→40%, holds 40→65%, erases 65→75% */
+      .typing2 { animation: typing2 20s steps(52) infinite; }
+      @keyframes typing2 {
+        0%,25%      { clip-path: inset(0 100% 0 0); }
+        40%         { clip-path: inset(0 0% 0 0); }
+        65%         { clip-path: inset(0 0% 0 0); }
+        75%,100%    { clip-path: inset(0 100% 0 0); }
+      }
+
+      /* CURSOR 1: appears at end of line1 typing (15%), blinks until line2 starts (25%),
+         then jumps to line2 area — hide cursor1, show cursor2 */
+      .cursor1 { animation: cursor1-anim 20s step-end infinite; }
+      @keyframes cursor1-anim {
+        0%,14%   { opacity: 0; }
+        15%      { opacity: 1; }
+        16%      { opacity: 0; }
+        17%      { opacity: 1; }
+        18%      { opacity: 0; }
+        19%      { opacity: 1; }
+        20%      { opacity: 0; }
+        21%      { opacity: 1; }
+        22%      { opacity: 0; }
+        23%      { opacity: 1; }
+        24%      { opacity: 0; }
+        25%,100% { opacity: 0; }
+      }
+
+      /* CURSOR 2: appears when line2 finishes typing (40%), blinks 5s (40→65%),
+         disappears when line2 erases (65%) */
+      .cursor2 { animation: cursor2-anim 20s step-end infinite; }
+      @keyframes cursor2-anim {
+        0%,39%   { opacity: 0; }
+        40%      { opacity: 1; }
+        41%      { opacity: 0; }
+        42%      { opacity: 1; }
+        43%      { opacity: 0; }
+        44%      { opacity: 1; }
+        45%      { opacity: 0; }
+        46%      { opacity: 1; }
+        47%      { opacity: 0; }
+        48%      { opacity: 1; }
+        49%      { opacity: 0; }
+        50%      { opacity: 1; }
+        51%      { opacity: 0; }
+        52%      { opacity: 1; }
+        53%      { opacity: 0; }
+        54%      { opacity: 1; }
+        55%      { opacity: 0; }
+        56%      { opacity: 1; }
+        57%      { opacity: 0; }
+        58%      { opacity: 1; }
+        59%      { opacity: 0; }
+        60%      { opacity: 1; }
+        61%      { opacity: 0; }
+        62%      { opacity: 1; }
+        63%      { opacity: 0; }
+        64%      { opacity: 1; }
+        65%,100% { opacity: 0; }
       }
     </style>
   </defs>
 
-  <rect width="800" height="368" rx="10" fill="#f6f8fa"/>
-  <rect width="800" height="368" rx="10" fill="none" stroke="#d0d7de" stroke-width="1"/>
+  <rect width="720" height="445" rx="10" fill="#f6f8fa"/>
+  <rect width="720" height="445" rx="10" fill="none" stroke="#d0d7de" stroke-width="1"/>
 
-  <circle cx="20" cy="20" r="6" fill="#ff5f57"/>
-  <circle cx="40" cy="20" r="6" fill="#ffbd2e"/>
-  <circle cx="60" cy="20" r="6" fill="#28ca41"/>
+  <circle cx="22" cy="22" r="6" fill="#ff5f57"/>
+  <circle cx="44" cy="22" r="6" fill="#ffbd2e"/>
+  <circle cx="66" cy="22" r="6" fill="#28ca41"/>
 
-  <text x="20" y="54" font-size="13" fill="#24292f">Pizza-powered QA Engineer @ Dodo Engineering</text>
+  <text x="24" y="58" font-size="15" fill="#24292f">Pizza-powered QA Engineer @ Dodo Engineering</text>
 
-  <text x="20" y="78" font-size="11" fill="#1a7f37">$ cat about.md</text>
-  <g transform="translate(20, 108)">
-    <text class="typing-text" font-size="12" fill="#57606a">Building bulletproof test automation since 2020. I break things professionally so users don't have to</text>
-    <text class="cursor" font-size="12" fill="#1a7f37" x="727" y="0">&#x2588;</text>
+  <text x="24" y="84" font-size="13" fill="#1a7f37">$ cat about.md</text>
+
+  <!-- Line 1 -->
+  <g transform="translate(24, 108)">
+    <text class="typing1" font-size="14" fill="#57606a">Building bulletproof test automation since 2020.</text>
+    <text class="cursor1" font-size="14" fill="#1a7f37" x="402" y="0">&#x2588;</text>
   </g>
 
-  <line x1="20" y1="130" x2="780" y2="130" stroke="#d0d7de" stroke-width="1"/>
-  <text x="20" y="150" font-size="11" fill="#1a7f37">$ echo $STACK</text>
+  <!-- Line 2 -->
+  <g transform="translate(24, 128)">
+    <text class="typing2" font-size="14" fill="#57606a">I break things professionally so users don't have to</text>
+    <text class="cursor2" font-size="14" fill="#1a7f37" x="437" y="0">&#x2588;</text>
+  </g>
 
-  <text x="20" y="187" font-size="11" fill="#57606a">languages</text>
-  <rect x="250" y="172" width="44" height="22" rx="3" fill="#ddf4ff"/>
-  <text x="272" y="187" font-size="11" font-weight="700" fill="#0550ae" text-anchor="middle">Java</text>
-  <rect x="300" y="172" width="76" height="22" rx="3" fill="#dafbe1"/>
-  <text x="338" y="187" font-size="11" font-weight="700" fill="#116329" text-anchor="middle">TypeScript</text>
-  <text x="20" y="217" font-size="11" fill="#57606a">currently learning</text>
-  <rect x="250" y="202" width="30" height="22" rx="3" fill="#fbefff"/>
-  <text x="265" y="217" font-size="11" font-weight="700" fill="#8250df" text-anchor="middle">C#</text>
-  <rect x="286" y="202" width="48" height="22" rx="3" fill="#fbefff"/>
-  <text x="310" y="217" font-size="11" font-weight="700" fill="#8250df" text-anchor="middle">NUnit</text>
-  <text x="20" y="247" font-size="11" fill="#57606a">test automation</text>
-  <rect x="250" y="232" width="72" height="22" rx="3" fill="#dafbe1"/>
-  <text x="286" y="247" font-size="11" font-weight="700" fill="#116329" text-anchor="middle">Playwright</text>
-  <rect x="328" y="232" width="88" height="22" rx="3" fill="#ddf4ff"/>
-  <text x="372" y="247" font-size="11" font-weight="700" fill="#0550ae" text-anchor="middle">Rest-Assured</text>
-  <rect x="422" y="232" width="46" height="22" rx="3" fill="#ddf4ff"/>
-  <text x="445" y="247" font-size="11" font-weight="700" fill="#0550ae" text-anchor="middle">JUnit</text>
-  <text x="20" y="277" font-size="11" fill="#57606a">ci/cd</text>
-  <rect x="250" y="262" width="58" height="22" rx="3" fill="#fff8c5"/>
-  <text x="279" y="277" font-size="11" font-weight="700" fill="#7d4e00" text-anchor="middle">Jenkins</text>
-  <rect x="314" y="262" width="110" height="22" rx="3" fill="#fff8c5"/>
-  <text x="369" y="277" font-size="11" font-weight="700" fill="#7d4e00" text-anchor="middle">GitHub Actions</text>
-  <text x="20" y="307" font-size="11" fill="#57606a">infrastructure</text>
-  <rect x="250" y="292" width="54" height="22" rx="3" fill="#d0f7f5"/>
-  <text x="277" y="307" font-size="11" font-weight="700" fill="#0e7a74" text-anchor="middle">Docker</text>
-  <rect x="310" y="292" width="82" height="22" rx="3" fill="#d0f7f5"/>
-  <text x="351" y="307" font-size="11" font-weight="700" fill="#0e7a74" text-anchor="middle">Kubernetes</text>
-  <text x="20" y="337" font-size="11" fill="#57606a">monitoring &amp; observability</text>
-  <rect x="250" y="322" width="58" height="22" rx="3" fill="#fff0eb"/>
-  <text x="279" y="337" font-size="11" font-weight="700" fill="#bc4c00" text-anchor="middle">Grafana</text>
-  <rect x="314" y="322" width="52" height="22" rx="3" fill="#fff0eb"/>
-  <text x="340" y="337" font-size="11" font-weight="700" fill="#bc4c00" text-anchor="middle">Kibana</text>
+  <line x1="24" y1="152" x2="696" y2="152" stroke="#d0d7de" stroke-width="1"/>
+  <text x="24" y="174" font-size="13" fill="#1a7f37">$ echo $STACK</text>
+
+  <text x="24" y="228" font-size="13" fill="#57606a">languages</text>
+  <rect x="260" y="212" width="48" height="24" rx="3" fill="#ddf4ff"/>
+  <text x="284" y="228" font-size="12" font-weight="700" fill="#0550ae" text-anchor="middle">Java</text>
+  <rect x="314" y="212" width="84" height="24" rx="3" fill="#dafbe1"/>
+  <text x="356" y="228" font-size="12" font-weight="700" fill="#116329" text-anchor="middle">TypeScript</text>
+
+  <text x="24" y="262" font-size="13" fill="#57606a">currently learning</text>
+  <rect x="260" y="246" width="30" height="24" rx="3" fill="#fbefff"/>
+  <text x="275" y="262" font-size="12" font-weight="700" fill="#8250df" text-anchor="middle">C#</text>
+  <rect x="296" y="246" width="52" height="24" rx="3" fill="#fbefff"/>
+  <text x="322" y="262" font-size="12" font-weight="700" fill="#8250df" text-anchor="middle">NUnit</text>
+
+  <text x="24" y="296" font-size="13" fill="#57606a">test automation</text>
+  <rect x="260" y="280" width="80" height="24" rx="3" fill="#dafbe1"/>
+  <text x="300" y="296" font-size="12" font-weight="700" fill="#116329" text-anchor="middle">Playwright</text>
+  <rect x="346" y="280" width="96" height="24" rx="3" fill="#ddf4ff"/>
+  <text x="394" y="296" font-size="12" font-weight="700" fill="#0550ae" text-anchor="middle">Rest-Assured</text>
+  <rect x="448" y="280" width="50" height="24" rx="3" fill="#ddf4ff"/>
+  <text x="473" y="296" font-size="12" font-weight="700" fill="#0550ae" text-anchor="middle">JUnit</text>
+
+  <text x="24" y="330" font-size="13" fill="#57606a">ci/cd</text>
+  <rect x="260" y="314" width="66" height="24" rx="3" fill="#fff8c5"/>
+  <text x="293" y="330" font-size="12" font-weight="700" fill="#7d4e00" text-anchor="middle">Jenkins</text>
+  <rect x="332" y="314" width="120" height="24" rx="3" fill="#fff8c5"/>
+  <text x="392" y="330" font-size="12" font-weight="700" fill="#7d4e00" text-anchor="middle">GitHub Actions</text>
+
+  <text x="24" y="364" font-size="13" fill="#57606a">infrastructure</text>
+  <rect x="260" y="348" width="60" height="24" rx="3" fill="#d0f7f5"/>
+  <text x="290" y="364" font-size="12" font-weight="700" fill="#0e7a74" text-anchor="middle">Docker</text>
+  <rect x="326" y="348" width="90" height="24" rx="3" fill="#d0f7f5"/>
+  <text x="371" y="364" font-size="12" font-weight="700" fill="#0e7a74" text-anchor="middle">Kubernetes</text>
+
+  <text x="24" y="398" font-size="13" fill="#57606a">monitoring &amp; observability</text>
+  <rect x="260" y="382" width="66" height="24" rx="3" fill="#fff0eb"/>
+  <text x="293" y="398" font-size="12" font-weight="700" fill="#bc4c00" text-anchor="middle">Grafana</text>
+  <rect x="332" y="382" width="56" height="24" rx="3" fill="#fff0eb"/>
+  <text x="360" y="398" font-size="12" font-weight="700" fill="#bc4c00" text-anchor="middle">Kibana</text>
+
 
 </svg>
